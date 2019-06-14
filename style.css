@@ -1,0 +1,242 @@
+/* COLORES */
+/* https://material.io/tools/color/#!/?view.left=1&view.right=0&primary.color=EEEEEE&secondary.color=ff0000&primary.text.color=000000&secondary.text.color=000000 */
+
+
+/* BODY */
+
+body {
+    font-family: 'New Rocker', cursive;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 20px;
+}
+
+/* !=BODY */
+/* HEADER */
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+/* LOGO */
+
+.img-logo-container {
+    /* float: left; */
+    /* background-color: blue; */
+    text-align: center;
+}
+
+.img-logo-container img {
+    width: 50vw;
+    margin-top: 20px;
+}
+
+/* !=LOGO */
+
+/* SOCIAL LIST */
+
+.social-list {
+    /* float: right; */
+    display: flex;
+    width: 100%;
+    /* background-color: yellow; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav a img {
+    width: 50px;
+    margin: 0 50px;
+}
+
+.face a img:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* !=SOCIAL LIST */
+
+/* ICON-NAV */
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    display: block;
+    position: fixed;
+    width: 100px;
+    top: 50px;
+    left: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    top: 0px;
+    right: 40px;
+}
+
+.nav li img {
+    width: 100px;
+}
+
+.nav li a {
+    display: block;
+    color: #c20000;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    max-width: 140px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+
+.nav li p {
+    color: #c20000;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    width: 100px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.nav li a:hover {
+    color: #ffffff;
+    background-color: #ff5a36;
+    border-radius: 10px;
+}
+
+.nav li p:hover {
+    color: #ffffff;
+    background-color: #ff5a36;
+    border-radius: 10px;
+}
+
+
+.nav li ul {
+    display: none;
+    position: absolute;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    left: 120px;
+    top: -10px;
+}
+
+#nav-open:hover {
+    animation: rotacion 4s infinite alternate;
+}
+
+/* !=ICON-NAV */
+
+/* !=HEADER */
+/* BIOGRAPHY */
+
+.bio-text-container {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.albums-text-container {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.members-text-container {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+/* !=BIOGRAPHY */
+/* ALBUMS */
+
+.albums {
+    /* background-color: green; */
+    padding-left: 20%;
+}
+
+.albums img {
+    width: 300px;
+}
+
+/* !=ALBUMS */
+/* MIEMBROS */
+
+.band-members {
+    /* background-color: yellow; */
+    font-size: 50px;
+    padding-left: 30%;
+}
+
+.band-members img {
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: solid 5px #fafafa;
+}
+
+.band-members p {
+    margin-left: 100px;
+}
+
+/* !=MIEMBROS */
+/* AUDIO-VIDEO */
+
+.audio-video {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* !=AUDIO-VIDEO */
+/* FORMULARIO */
+
+.formulario {
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+
+input {
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+}
+
+/* !=FORMULARIO */
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #fafafa;
+}
+
+/* !=FOOTER */
