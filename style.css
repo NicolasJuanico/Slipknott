@@ -201,6 +201,9 @@ ul {
 /* !=biografia */
 /* ALBUMS */
 
+.albums {
+    background-color: red;
+}
 
 .albums-text-container {
     width: 100%;
@@ -208,14 +211,6 @@ ul {
     text-align: center;
 }
 
-.albums {
-    /* background-color: green; */
-    padding-left: 20%;
-}
-
-.albums img {
-    width: 300px;
-}
 
 /* !=ALBUMS */
 /* MIEMBROS */
