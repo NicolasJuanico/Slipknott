@@ -34,6 +34,12 @@ header {
     margin-top: 20px;
 }
 
+.img-logo-container img:hover {
+    animation: shake .5s cubic-bezier(.36,.07,.19,.97) alternate infinite;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
 /* !=LOGO */
 
 /* SOCIAL LIST */
@@ -47,9 +53,8 @@ header {
     align-items: center;
 }
 
-
 nav a img {
-    width: 50px;
+    width: 35px;
     margin: 0 50px;
 }
 
@@ -99,7 +104,6 @@ ul {
     padding: 5px 10px;
 }
 
-
 .nav li p {
     color: #c20000;
     text-transform: uppercase;
@@ -121,7 +125,6 @@ ul {
     background-color: #ff5a36;
     border-radius: 10px;
 }
-
 
 .nav li ul {
     display: none;
@@ -148,30 +151,62 @@ ul {
 /* !=ICON-NAV */
 
 /* !=HEADER */
-/* BIOGRAPHY */
+/* biografia */
+
+.biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    /* background-color: yellow; */
+}
+
+.bio-img-container {
+    width: 80%;
+    /* background-color: blue; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-img-container img {
+    width: 50%;
+}
 
 .bio-text-container {
-    width: 100%;
-    font-size: 25px;
-    text-align: center;
+    width: 50%;
+    max-height: 350px;
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
+
+.bio-text-container p {
+    font-size: 25px;
+    padding: 0 50px;
+    line-height: 2;
+}
+
+.bio-img-container:hover .bio-text-container {
+    display: flex
+}
+
+/* !=biografia */
+/* ALBUMS */
+
 
 .albums-text-container {
     width: 100%;
     font-size: 25px;
     text-align: center;
 }
-
-.members-text-container {
-    width: 100%;
-    font-size: 25px;
-    text-align: center;
-}
-
-
-
-/* !=BIOGRAPHY */
-/* ALBUMS */
 
 .albums {
     /* background-color: green; */
@@ -204,6 +239,12 @@ ul {
 
 /* !=MIEMBROS */
 /* AUDIO-VIDEO */
+
+.members-text-container {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
 
 .audio-video {
     display: inline-block;
