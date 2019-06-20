@@ -209,7 +209,7 @@ ul {
     align-content: center;
     width: 100%;
     /* background-color: red; */
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .albums-text-container p {
@@ -218,40 +218,24 @@ ul {
     text-align: center;
 }
 
-.botones {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 /* !=ALBUMS */
 /* MIEMBROS */
 
 .band-members {
     /* background-color: yellow; */
-    font-size: 50px;
-    padding-left: 30%;
+    margin: 0;
+    padding: 0;
 }
-
-.band-members img {
-    width: 400px;
-    border-radius: 10px;
-    margin: 10px 0;
-    border: solid 5px #fafafa;
-}
-
-.band-members p {
-    margin-left: 100px;
-}
-
-/* !=MIEMBROS */
-/* AUDIO-VIDEO */
 
 .members-text-container {
     width: 100%;
     font-size: 25px;
     text-align: center;
 }
+
+/* !=MIEMBROS */
+/* AUDIO-VIDEO */
+
 
 .audio-video {
     display: inline-block;
