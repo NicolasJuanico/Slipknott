@@ -6,7 +6,7 @@
 
 body {
     font-family: 'New Rocker', cursive;
-    background-color: #eee;
+    background-color: #eee !important;
     margin: 0;
     padding: 0;
     color: #000;
@@ -30,7 +30,7 @@ header {
 }
 
 .img-logo-container img {
-    width: 50vw;
+    width: 50%;
     margin-top: 20px;
 }
 
@@ -231,6 +231,18 @@ ul {
     width: 100%;
     font-size: 25px;
     text-align: center;
+}
+
+.band-members img {
+    border-radius: 50%;
+    border: solid 5px grey;
+    transform: scale(.9);
+    opacity: 0.5;
+}
+
+.band-members img:hover {
+    transform: scale(1);
+    opacity: 1;
 }
 
 /* !=MIEMBROS */
