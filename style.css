@@ -2,6 +2,11 @@ body {
     background-color: black;
     color: red;
     font-family: 'New Rocker', cursive;
+    background-image: url("resources/backgrounds/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    background-attachment: fixed;
 }
 
 .row .col a img {
