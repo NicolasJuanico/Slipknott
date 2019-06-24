@@ -12,3 +12,11 @@ body {
 .row .col a img {
     max-width: 50px;
 }
+
+.card {
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.card img {
+    opacity: .7;
+}
