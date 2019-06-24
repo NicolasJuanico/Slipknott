@@ -1,0 +1,32 @@
+body {
+    background-image: url('resources/backgrounds/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'New Rocker', cursive;
+    font-size: 35px;
+    color: whitesmoke;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+p {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#star {
+    max-width: 50px;
+}
+
+#logo {
+    max-width: 300px;
+}
+
+.social-medias img {
+    max-width: 35px;
+}
+
