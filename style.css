@@ -2,9 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    color: red;
+    color: white;
     font-family: 'New Rocker', cursive;
-    background-image: url("resources/backgrounds/bg2.jpg");
+    background-image: url("resources/backgrounds/bg6.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vw;
@@ -43,7 +43,7 @@ p {
     }
     
     nav a img {
-        width: 50px;
+        width: 40px;
     }
     
     /* !=header */
@@ -120,9 +120,18 @@ p {
     }
     
     .artista-foto img {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
+        transform: scale(.9);
+        border-radius: 50%;
+        opacity: 1;
+    }
+    
+    .artista-foto img:hover {
+        width: 250px;
+        height: 250px;
+        opacity: .7;
     }
     
     .artista-texto {
@@ -143,7 +152,12 @@ p {
     }
     /* !=video */
     /* form */
+    
     /* !=form */
     /* footer */
+    footer nav a img {
+        width: 25px;
+        margin: 20px 0;
+    }
     /* !=footer */
 }
