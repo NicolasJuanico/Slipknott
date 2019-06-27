@@ -46,38 +46,31 @@ p {
         width: 40px;
     }
     
-    /* !=header */
-    /* hero */
-
-    .container-hero-flex {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-top: 60px;
-        padding: 0 2em;
-    }
-    
-    /* !=hero */
-    /* album */
-    
-    .container-flex-album-text {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin: 20px 0;
-        padding: 0 2em;
-    }
-
-    .container-flex-album {
-        width: 100%;
+    .container-flex {
         display: flex;
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
     }
+
+    /* !=header */
+    /* hero */
+
+    .hero {
+        padding: 1em;
+    }
     
-    .container-flex-album img {
-        width: 200px;
+    /* !=hero */
+    /* album */
+    
+    .album-text {
+        margin: 20px 0;
+        padding: 0 2em;
+    }
+
+    .album {
+        width: 100%;
+        flex-wrap: wrap;
     }
     
     .album {
@@ -87,6 +80,7 @@ p {
     }
     
     .album-foto img {
+        width: 200px;
         opacity: .7;
     }
     
@@ -97,16 +91,12 @@ p {
     /* !=album */
     /* artista */
 
-    .container-flex-artista-text {
-        display: flex;
-        justify-content: center;
-        align-content: center;
+    .artista-text {
         margin: 40px 0 20px;
         padding: 0 2em;
     }
     
-    .container-flex-artista {
-        width: 100%;
+    .artista {
         display: flex;
         justify-content: center;
         align-content: center;
@@ -145,19 +135,59 @@ p {
     
     /* !=artista */
     /* video */
-    .container-flex-video {
-        display: flex;
-        align-content: center;
-        justify-content: center;
+    iframe {
+        max-width: 560px;
+        max-height: 315px;
     }
     /* !=video */
     /* form */
+
+    form {
+        padding: 1.5em;
+        text-align: center;
+    }
+
+    form p {
+        font-size: 2em;
+        text-transform: capitalize;
+    }
     
+    input {
+        border-radius: 10px;
+        margin: 5px;
+        text-align: center;
+        width: 200px;
+        text-transform: capitalize;
+        font-family: 'New Rocker', cursive;
+    }
+
+    .button-group {
+        width: 100%;
+        margin: 10px;
+    }
+
+    button {
+        border-radius: 10px;
+        width: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        background-color: red;
+        font-family: 'New Rocker', cursive;
+    }
+
     /* !=form */
     /* footer */
     footer nav a img {
         width: 25px;
         margin: 20px 0;
     }
+
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
     /* !=footer */
 }

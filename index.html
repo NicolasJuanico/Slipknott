@@ -26,17 +26,17 @@
     <!-- !=HEADER -->
     <!-- HERO -->
     <section>
-        <div class="container-hero-flex">
+        <div class="container-flex hero">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi vero nesciunt, necessitatibus aut ipsa est labore veritatis dolor culpa molestias eveniet, consequuntur ullam, quod libero modi provident quae. Optio, at.</p>
         </div>
     </section>
     <!-- !=HERO -->
     <!-- ALBUMS -->
     <section>
-        <div class="container-flex-album-text">
+        <div class="container-flex album-text">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et aspernatur eum, asperiores autem quis dolores minus consequatur officiis nesciunt nulla tenetur eveniet officia ipsum voluptate explicabo reprehenderit praesentium quisquam?</p>
         </div>
-        <div class="container-flex-album">
+        <div class="container-flex album">
             <div class="album">
                 <div class="album-foto">
                     <img src="resources/albumCover/07_slipknot.jpg" alt="slipknot">
@@ -90,10 +90,10 @@
     <!-- !=ALBUMS -->
     <!-- MIEMBROS -->
     <section>
-        <div class="container-flex-artista-text">
+        <div class="container-flex artista-text">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et aspernatur eum, asperiores autem quis dolores minus consequatur officiis nesciunt nulla tenetur eveniet officia ipsum voluptate explicabo reprehenderit praesentium quisquam?</p>
         </div>
-        <div class="container-flex-artista">
+        <div class="container-flex">
             <div class="artista">
                 <div class="artista-foto">
                     <img src="resources/bandMembers/alex-venturella.jpg" alt="">
@@ -180,7 +180,7 @@
     <!-- !=MIEMBROS -->
     <!-- VIDEO -->
     <section>
-        <div class="container-flex-video">
+        <div class="container-flex">
             <iframe src="https://www.youtube.com/embed/qw2LU1yS7aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
@@ -189,12 +189,13 @@
     <section>
         <form action="#">
             <p>newsletter</p>
-            
             <input type="text" name="" id="" placeholder="nombre" required>
             <input type="text" name="textA" id="" placeholder="apellido" required>
-            <input type="text" placeholder="Ingrese su email" name="email" required>
-            <button type="submit">enviar</button>
-            <button type="reset">reiniciar</button>
+            <input type="text" placeholder="email" name="email" required>
+            <div class="button-group">
+                <button type="submit">enviar</button>
+                <button type="reset">reiniciar</button>
+            </div>
         </form>
     </section>
     <!-- !=FORMULARIO DE CONTACTO -->
@@ -207,7 +208,9 @@
             <a href=""><img src="resources/png/twitter.png" alt="twitter"></a>
             <a href=""><img src="resources/png/youtube.png" alt="youtube"></a>
         </nav>
-        
+        <div class="container-flex">
+            <p>La informacion por recopilada de la pagina oficial de <a href="">Slipknot</a> y <a href="">Wikipedia</a></p>
+        </div>
     </footer>
     <!-- !=FOOTER -->
 </body>
