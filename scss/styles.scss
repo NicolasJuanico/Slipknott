@@ -1,0 +1,13 @@
+$cool-red: red;
+
+.color ul {
+    list-style: none;
+    color: red;
+    background: blue;
+    width: 50%;
+    height: 100px;
+    color: $cool-red;
+    a {
+        color: black;
+    }
+}

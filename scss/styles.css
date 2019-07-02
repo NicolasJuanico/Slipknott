@@ -1,0 +1,13 @@
+.color ul {
+  list-style: none;
+  color: red;
+  background: blue;
+  width: 50%;
+  height: 100px;
+  color: red;
+}
+
+.color ul a {
+  color: black;
+}
+/*# sourceMappingURL=styles.css.map */
