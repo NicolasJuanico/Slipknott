@@ -1,13 +1,247 @@
-$cool-red: red;
+$color: white;
+$color-muted: rgba(255, 255, 255, 0.7);
+@font-face {
+    font-family: "Industry";
+    src: url("../resources/tipografia/Industry-Book.woff2");
+}
 
-.color ul {
-    list-style: none;
-    color: red;
-    background: blue;
-    width: 50%;
-    height: 100px;
-    color: $cool-red;
-    a {
-        color: black;
+body {
+    font-family: "Industry", cursive;
+    background-color: #9b0000;
+    margin: 0;
+}
+
+p {
+    color: $color;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: $color;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: $color;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.album, .artista {
+    padding: 1em;
+}
+
+@media only screen and (min-width: 320px) {
+
+    /* header */
+    header {
+        display: block;
+        text-align: center;
+        padding: 1em 0;
     }
+    
+    header img {
+        width: 60%;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 20px;
+    }
+    
+    nav a img {
+        width: 35px;
+    }
+    
+
+    /* !=header */
+    /* hero */
+
+    .hero {
+        padding: 1em 0;
+    }
+    
+    /* !=hero */
+    /* album */
+    
+    .album {
+        width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+
+    .album-text {
+        margin: 20px 0;
+    }
+    
+    .album-foto img {
+        width: 225px;
+        opacity: .7;
+    }
+    
+    .album-foto img:hover {
+        opacity: 1;
+    }
+    
+    /* !=album */
+    /* artista */
+    
+    .artista {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .artista-foto {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .artista-foto img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        opacity: 1;
+    }
+    
+    .artista-foto img:hover {
+        width: 250px;
+        height: 250px;
+        opacity: .7;
+    }
+    
+    .artista-texto {
+        text-align: center;
+        margin: 20px 0 20px;
+        padding: 1em 0;
+        width: 50%;
+    }
+    
+    /* !=artista */
+    /* form */
+
+    form {
+        padding: 1.5em;
+        text-align: center;
+    }
+
+    form p {
+        font-size: 2em;
+        text-transform: capitalize;
+    }
+    
+    input {
+        border-radius: 10px;
+        margin: 5px;
+        text-align: center;
+        width: 200px;
+        text-transform: capitalize;
+        font-family: "Industry", cursive;
+    }
+
+    .button-group {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    button {
+        border-radius: 10px;
+        width: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color;
+        background-color: red;
+        font-family: "Industry", cursive;
+    }
+
+    /* !=form */
+    /* footer */
+    footer {
+        margin: 0;
+        padding: 0 1.2em;
+    }
+
+    footer nav a img {
+        width: 25px;
+        margin: 20px 0;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: $color;
+    }
+
+    /* !=footer */
+}
+
+@media only screen and (min-width: 700px) {
+
+    img {
+        width: 200px;
+    }
+
+    /* HEADER */
+     
+    header {
+        display: block;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    header img {
+        width: 50vw;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 20px;
+    }
+    
+    nav a img {
+        width: 35px;
+    }
+
+    .hero p{
+        padding: 1em;
+    }
+
+    /* !=HEADER */
+    /* ALMBUM */
+
+    .album {
+        width: 30%;
+    }
+    
+    /* !=ALMBUM */
+    /* ARTISTA */
+    
+    .artista {
+        width: 30%
+    }
+
+    /* !=ARTISTA */
+} 
+
+img {
+    width: 200px;
+}
+
+
+span {
+    color: $color-muted;
 }
