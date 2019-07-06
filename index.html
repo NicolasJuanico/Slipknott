@@ -7,6 +7,8 @@
     <title>Slipknot</title>
     <link rel="shortcut icon" href="resources/oficial img/favicon.png" type="image/x-icon">
    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=New+Rocker&display=swap" rel="stylesheet">
     <!-- CSS -->
@@ -17,36 +19,52 @@
 <body>
     <!-- HEADER -->
     <header>
-        <a href="https://slipknot1.com/" target="_blank">
-            <img src="resources/logos/sk-logo-red.0a2db178.png" alt="">
-        </a>
-        <nav>
-            <a href="https://www.facebook.com/slipknot/" target="_blank"><img src="resources/png/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/slipknot/" target="_blank"><img src="resources/png/instagram.png" alt="instragram"></a>
-            <a href="https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8" target="_blank"><img src="resources/png/spotify.png" alt="spotify"></a>
-            <a href="https://twitter.com/slipknot" target="_blank"><img src="resources/png/twitter.png" alt="twitter"></a>
-            <a href="https://www.youtube.com/channel/UCOJZ1tna8yj8mAEITPkHNCQ" target="_blank"><img src="resources/png/youtube.png" alt="youtube"></a>
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- image -->
+            <a class="navbar-brand" href="https://slipknot1.com/" target="_blank">
+                <img src="resources/logos/sk-logo-red.0a2db178.png" alt="logo">
+            </a>
+            <!-- !=image -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#albums">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#members">Miembros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- !=HEADER -->
     <!-- HERO -->
     <section>
         <div class="container-flex hero">
-            <img src="resources/backgrounds/comprimido/bg1.jpg" alt="">
-            <h2>
-                Esta banda se formó en Iowa en 1995, aunque sufrió muchos cambios en la formación en los primeros años.
-                Sus miembros actuales son: Sid Wilson (bajo y teclado), Chris Fehn (percusión), Jim Root (guitarra), 
-                Craig Jones (sampler y teclados), Shawn Crahan (percusión), Mick Thomson (guitarra), Corey Taylor (Voz), 
-                Alessandro Venturella (tornamesa) y Jay Weinberg (batería). Lanzaron su primer álbum "Slipknot" en 1999 y 
-                hasta ahora han publicado 5 discos, siendo el último publicado en 2014 bajo el título ".5: The Gray Chapter".
-                Su carrera ha sido reconocida en varias ocasiones: son ganadores de un Premio Grammy, además de haber sido
-                nominados en 8 ocasiones más y también han sido nominados a los MTV Music Awards.
-            </h2>
+            <div class="hero-image">
+                <img id="hero" src="resources/backgrounds/comprimido/bg0.jpg" alt="">
+            </div>
+            <div class="hero-text">
+                <p>
+                    Se formó en Iowa en 1995, lanzaron su primer álbum "Slipknot" en 1999 y hasta ahora han publicado 5 discos, 
+                    siendo el último publicado en 2014 bajo el título ".5: The Gray Chapter".
+                    <br>
+                    Su carrera ha sido reconocida en varias ocasiones: son ganadores de un Premio Grammy, además de haber sido
+                    nominados en 8 ocasiones más y también han sido nominados a los MTV Music Awards.
+                </p>
+            </div>
         </div>
     </section>
     <!-- !=HERO -->
     <!-- ALBUMS -->
-    <section>
+    <section id="albums">
         <div class="container-flex">
             <div class="album">
                 <div class="album-foto">
@@ -106,7 +124,7 @@
     </section>
     <!-- !=ALBUMS -->
     <!-- MIEMBROS -->
-    <section>
+    <section id="members">
         <div class="container-flex">
             <div class="artista-texto">
                 <h2>
@@ -258,32 +276,40 @@
     </section>
     <!-- !=VIDEO -->
     <!-- FORMULARIO DE CONTACTO-->
-    <section>
-        <form action="#">
-            <p>newsletter</p>
-            <input type="text" name="" id="" placeholder="nombre" required>
-            <input type="text" name="textA" id="" placeholder="apellido" required>
-            <input type="text" placeholder="email" name="email" required>
-            <div class="button-group">
-                <button type="submit">enviar</button>
-                <button type="reset">reiniciar</button>
+    <section id="contact">
+        <form>
+            <h2>newsletter</h2>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese un nombre">
             </div>
+            <div class="form-group">
+                <label for="lastName">Apellido</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Ingrese un apellido">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese un email de contacto">
+            </div>
+            <button type="submit" role="button" class="btn btn-lg btn-outline-light">Enviar</button>
+            <button type="reset" role="button" class="btn btn-lg btn-outline-light">Reiniciar</button>
         </form>
     </section>
     <!-- !=FORMULARIO DE CONTACTO -->
     <!-- FOOTER -->
     <footer>
-        <nav>
+        <div class="social-media fixed-bottom">
             <a href="https://www.facebook.com/slipknot/" target="_blank"><img src="resources/png/facebook.png" alt="facebook"></a>
             <a href="https://www.instagram.com/slipknot/" target="_blank"><img src="resources/png/instagram.png" alt="instragram"></a>
             <a href="https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8" target="_blank"><img src="resources/png/spotify.png" alt="spotify"></a>
             <a href="https://twitter.com/slipknot" target="_blank"><img src="resources/png/twitter.png" alt="twitter"></a>
             <a href="https://www.youtube.com/channel/UCOJZ1tna8yj8mAEITPkHNCQ" target="_blank"><img src="resources/png/youtube.png" alt="youtube"></a>
-        </nav>
-        <div class="container-flex">
-            <p>La informacion fue recopilada de la pagina oficial de <a href="">Slipknot</a> y lo que tiene <a href="">Wikipedia</a> de ellos</p>
         </div>
     </footer>
     <!-- !=FOOTER -->
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

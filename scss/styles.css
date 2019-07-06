@@ -1,231 +1,110 @@
 @font-face {
-  font-family: "Industry";
-  src: url("../resources/tipografia/Industry-Book.woff2");
+  font-family: 'Heavy';
+  src: url("/resources/tipografia/Industry-Book.woff2") format("woff2");
 }
 
 body {
-  font-family: "Industry", cursive;
-  background-color: #9b0000;
-  margin: 0;
-}
-
-p {
+  font-family: 'Heavy', cursive;
+  background-color: #292b2c;
   color: white;
 }
 
-h2 {
-  font-size: 1.8em;
+body a {
   color: white;
+  text-decoration: none;
 }
 
-h3 {
-  font-size: 1.1em;
-  color: white;
+.hero img {
+  width: 100%;
 }
 
 .container-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
-.album, .artista {
-  padding: 1em;
-}
-
-@media only screen and (min-width: 320px) {
-  /* header */
-  header {
-    display: block;
+@media (min-width: 320px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+  .navbar-collapse {
     text-align: center;
-    padding: 1em 0;
+    font-size: 1.4em;
   }
-  header img {
-    width: 60%;
-  }
-  nav {
+  .hero .hero-image {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin-top: 20px;
   }
-  nav a img {
-    width: 35px;
+  .hero .hero-text {
+    padding: 1em 2em;
+    width: 100%;
   }
-  /* !=header */
-  /* hero */
-  .hero {
-    padding: 1em 0;
-  }
-  /* !=hero */
-  /* album */
   .album {
     width: 100%;
     text-align: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 2em;
   }
-  .album-text {
-    margin: 20px 0;
-  }
-  .album-foto img {
-    width: 225px;
-    opacity: .7;
-  }
-  .album-foto img:hover {
-    opacity: 1;
-  }
-  /* !=album */
-  /* artista */
-  .artista {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .artista-foto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .artista-foto img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    opacity: 1;
-  }
-  .artista-foto img:hover {
-    width: 250px;
-    height: 250px;
-    opacity: .7;
+  .album img {
+    padding: 1em;
+    border-radius: 40px;
+    max-width: 80%;
+    border: solid white .4px;
   }
   .artista-texto {
-    text-align: center;
-    margin: 20px 0 20px;
-    padding: 1em 0;
-    width: 50%;
-  }
-  /* !=artista */
-  /* form */
-  form {
-    padding: 1.5em;
-    text-align: center;
-  }
-  form p {
-    font-size: 2em;
-    text-transform: capitalize;
-  }
-  input {
-    border-radius: 10px;
-    margin: 5px;
-    text-align: center;
-    width: 200px;
-    text-transform: capitalize;
-    font-family: "Industry", cursive;
-  }
-  .button-group {
+    margin: 1em 0;
     width: 100%;
-    margin: 10px 0;
-  }
-  button {
-    border-radius: 10px;
-    width: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    background-color: red;
-    font-family: "Industry", cursive;
-  }
-  /* !=form */
-  /* footer */
-  footer {
-    margin: 0;
-    padding: 0 1.2em;
-  }
-  footer nav a img {
-    width: 25px;
-    margin: 20px 0;
-  }
-  footer a {
-    text-decoration: none;
-    color: white;
-  }
-  /* !=footer */
-}
-
-@media only screen and (min-width: 700px) {
-  img {
-    width: 200px;
-  }
-  /* HEADER */
-  header {
-    display: block;
-    text-align: center;
     padding: 1em;
   }
-  header img {
-    width: 50vw;
-  }
-  nav {
+  .artista {
     width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .artista img {
+    padding: 1em;
+    border-radius: 40px;
+    max-width: 70%;
+    border: solid white .4px;
+  }
+  form {
+    margin: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  form h2 {
+    text-transform: uppercase;
+  }
+  form input {
+    text-align: center;
+  }
+  form button {
+    color: white;
+    margin: 0 20px;
+  }
+  .social-media {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 1em;
   }
-  nav a img {
-    width: 35px;
+  .social-media img {
+    width: 40px;
+    border-radius: 50%;
   }
-  .hero p {
-    padding: 1em;
+  img {
+    width: 100%;
   }
-  /* !=HEADER */
-  /* ALMBUM */
-  .album {
-    width: 30%;
-  }
-  /* !=ALMBUM */
-  /* ARTISTA */
-  .artista {
-    width: 30%;
-  }
-  /* !=ARTISTA */
-}
-
-img {
-  width: 200px;
-}
-
-span {
-  color: rgba(255, 255, 255, 0.7);
 }
 /*# sourceMappingURL=styles.css.map */
